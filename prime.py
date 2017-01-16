@@ -11,6 +11,14 @@ def prime_nums(n):
 			rslt.append(x)
 	return rslt
 
+""" 
+Based on.
+Title: Prime Numbers
+Author: James Conan
+Date: N/A
+Code version: Pseudocode
+Availability: http://www.cs.uwc.ac.za/~jconnan/FirstYear/checkprime.txt 
+"""
 def isPrime(num):
 	if num < 2:
 		return False # not prime
@@ -24,6 +32,11 @@ def isPrime(num):
 		return True # prime
 
 """
-
-
+Asymptotic analysis
+	- The iteration within the prime_nums function with run n + 1 times. 
+	- The extra iteration detects the conditions necessary for exiting the loop.
+	- On each iteration, the function isPrime is called with the current value of x as an arguement.
+	- This arguement is used to determine the number of iterations within the the isPrime function.
+	- The code represents a nested loop which has a complexity of O(n^2) i.e. quadratic complexity.
+	- It is however unlikely that this worst scenario will occur since the nested loop is capped to the square root of the input.
 """
