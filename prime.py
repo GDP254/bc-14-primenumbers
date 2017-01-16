@@ -15,9 +15,10 @@ def isPrime(num):
 	if num < 2:
 		return False # not prime
 	pfactor = 2
-	while (pfactor <= sqrt(num)) and not (num % pfactor == 0):
+	srt = sqrt(num)
+	while (pfactor <= srt) and not (num % pfactor == 0):
 		pfactor += 1
-	if pfactor <= sqrt(num):
+	if pfactor <= srt:
 		return False # not prime
 	else:
 		return True # prime
