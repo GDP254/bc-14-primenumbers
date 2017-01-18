@@ -1,4 +1,4 @@
-from unittest import TestCase
+from unittest import TestCase, main
 from prime import prime_nums
 
 """
@@ -68,4 +68,4 @@ class TestPrime(TestCase):
 		self.assertEquals(prime_nums(1000), output)
 
 if __name__ == '__main__':
-	unittest.main()
+	main()
